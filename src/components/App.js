@@ -7,13 +7,13 @@ const App = () => {
   };
   const handleSingleClick = (event) => {
     event.preventDefault();
-    console.log("I was double clicked");
+    console.log("I was not double clicked");
   };
 
   return (
     <div id="main">
       <button
-        onClick={handleDoubleClick}
+        onDoubleClick={handleDoubleClick}
         onClick={handleSingleClick}
         id="dblclick-btn"
       >
